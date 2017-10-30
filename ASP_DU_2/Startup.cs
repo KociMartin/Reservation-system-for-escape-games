@@ -30,7 +30,7 @@ namespace ASP_DU_2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Pridani do service konkretni implementaci rozhrani
+            //Registrace sluzeb v IoC Containeru
             services.AddTransient<ICustomerService, CustomerService>();
             services.AddTransient<IReservationService, ReservationService>();
             services.AddTransient<IRoomService, RoomService>();
@@ -89,19 +89,16 @@ namespace ASP_DU_2
                 Room CreatedRoomChamber = new Room()
                 {
                     Name = "Alchemist chamber",
-                    //Description = new string('X', 205)
                     Description = LoremIpsum
                 };
                 Room CreatedRoomEternity = new Room()
                 {
                     Name = "Path to Eternity",
-                    //Description = new string('E', 205)
                     Description = LoremIpsum
                 };
                 Room CreatedRoomAncestors = new Room()
                 {
                     Name = "Legacy of the Ancestors",
-                    //Description = new string('A', 205)
                     Description = LoremIpsum
                 };
 

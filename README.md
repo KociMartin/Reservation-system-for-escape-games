@@ -2,15 +2,15 @@
 This is my Unicorn College semestral project in ASP .NET Core MVC.
 
 The aim of this project is to implement simple reservation system for escape games.
-This application allows customers to reserve single Escape Rooms for specific time and date.
+This application allows customers to reserve single Escape Rooms on specific time and date.
 
 ### Business and Data Access Layer
 
-Appliacation works with Room and Reservation Entities
+Application works with Room and Reservation Entities
 
 #### Room
 
- Room represents single room which customer can reserve for specific time. Also all rooms are opened everyday. The Room has specific attributes.
+ Room represents single room, which customer can reserve for specific time. Also all rooms are opened everyday. The Room has specific attributes.
   *  Name
   *  Description
   *  Opening Hours 
@@ -39,12 +39,38 @@ Appliacation works with Room and Reservation Entities
  Application has a simple transparent design with use of HTML, CSS and Javascript(jQuery).
  
  Index page shows list of all Rooms, where each Room displays its name, description with tooltip and link to booking of the current Room.
- The page with booking for the current room
+ 
+ 
+![Alt text](../master/Images/Escape%20Games%201.png)
 
 
+ The page with booking for the current room has in its upper part name of the chosen Room and Room description. Then there is a datepicker and back button. Customer picks desired hour in the right part which colors. When it is done Next button appears and customer can continue to the next step.
+ 
+![Alt text](../master/Images/Escape%20Games%202.png) 
 
-  
 
-Cílem této práce je implementovat prototyp jednoduchého rezervačního systému, který si v některých ohledech zjednodušíme.
- Aplikace umožní rezervovat jednotlivé místnosti na určité časy a zároveň poskytne rozhraní pro jiné aplikace,
- které se budou na vybraná data z této aplikace dotazovat prostřednictvím REST API.
+Here customer fills his credentials and Create Reservation which will be saved to database.
+
+![Alt text](../master/Images/Escape%20Games%203.png) 
+
+### REST API
+
+Application contains REST API. API has two methods. 
+
+First one will accept GET request with parameter - date in format yyyy.mm.dd And it returns list of all Rooms and information about free times for Reservations on current date and opening hours of specific Rooms.
+
+Second one returns same informations but only for specific Room, which ID will be handed as a parameter 
+
+Both methods return JSON.
+
+URL of REST API: 
+
+1)http://localhost/api/ReservationAPI/GetRoom/ID
+                 
+2)http://localhost/api/ReservationAPI/GetRooms/yyyy.mm.dd
+
+#### TODO
+
+*  API - Glitch. API methods does not show reservations correctly. Algorithm seems fine. Problem is probably in Data Access layer.
+ 
+

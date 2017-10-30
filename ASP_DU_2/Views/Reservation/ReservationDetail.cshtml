@@ -1,0 +1,86 @@
+﻿@model ModelKeeper
+@{ViewData["Title"] = "Detail of Reservation";}
+
+@using (Html.BeginForm())
+{
+    <h3>
+        Booking for Room:
+        @Html.DisplayFor(x => x.room.Name)
+    </h3>
+    <div class="row">
+        <div class="col-xs-12">
+            @Html.LabelFor(x => x.room.Description) @Html.DisplayFor(x => x.room.Description)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 next-button-change chosen-date">
+            @Html.LabelFor(x => x.reservation.Date)
+            <input type="date" name="reservation.Date" />
+        </div>
+        <div class="col-xs-6">
+            @Html.LabelFor(x => x.room.OpeningHours)
+        </div>
+
+    </div>
+    <div class="row">    
+        <div class=" col-xs-offset-6 col-xs-6">
+            <div class="row">
+                @foreach (int TimeFrom in Model.room.OpeningHoursNumbers())
+                {
+                    int TimeTo = TimeFrom + 1;
+                    <div class="col-xs-3 ">
+                        <div class="chosen-time next-button-change">
+                            @TimeFrom:00 - @TimeTo:00
+                            <input type="hidden" value="@TimeFrom" />      @*//1*@
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <input type="button" value="Back" onclick="location.href='@Url.Action("Index", "Reservation")'" />
+        </div>
+        <div class="col-xs-offset-5 col-xs-1">
+            <input type="submit" value="Next" />
+        </div>
+    </div>
+    //3*@
+    @Html.HiddenFor(x => x.reservation.ReservationHour);
+    @Html.HiddenFor(x => x.room.Id);
+
+}
+
+@section Scripts {
+    <script>
+        //2
+        var DateChanged = false;
+        //Nastaveni barvy pozadi Opening Hours pri kliknuti
+        $(".chosen-time").on({
+            click: function () {
+                $("div.chosen-time").removeClass("opening-hour-chosen");
+                $(this).toggleClass("opening-hour-chosen"); // danej objekt z kolekce v divu
+                var TimeFrom = $(this).children("input").val() //veme prvni element, kterej je input a vezme z neho value (danej klikej Opening Hour)
+                $("#@Html.IdFor( x => x.reservation.ReservationHour)").val(TimeFrom) // inputu HiddenTimeFrom priradi vybranej OpeningHour
+                if (DateChanged == true) {
+                    $("input[type='submit']").css("display", "inherit") //Zpristupneni Next tlacitka
+                }
+            }
+        });
+
+
+        //Pri zmene datumu, odskrtnout barvu backroundu Opening Hours
+        $(".chosen-date").on({
+            change: function () {
+                $("div.chosen-time").removeClass("opening-hour-chosen");
+                $("input[type='submit']").css("display", "none") // Zablokovani Next tlacitka
+                DateChanged = true;
+            }
+        });
+
+        // Aby se pri nacteni stranky zablokovalo tlacitko Next
+        $(document).ready(function () { $("input[type='submit']").css("display", "none") });
+    </script>
+}

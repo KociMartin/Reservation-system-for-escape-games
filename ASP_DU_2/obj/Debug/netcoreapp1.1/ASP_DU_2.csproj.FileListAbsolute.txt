@@ -1,0 +1,27 @@
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.deps.json
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.runtimeconfig.json
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.runtimeconfig.dev.json
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.dll
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.csprojResolveAssemblyReference.cache
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.AssemblyInfo.cs
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.pdb
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.dll
+C:\Users\Nashmar\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.pdb
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.deps.json
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.runtimeconfig.json
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.runtimeconfig.dev.json
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.dll
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.pdb
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.csprojResolveAssemblyReference.cache
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.AssemblyInfo.cs
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.dll
+E:\Dropbox\Skola\UNICORN\L 2016-2017\ASP\DU\ASP_DU_2\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.pdb
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.deps.json
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.runtimeconfig.json
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.runtimeconfig.dev.json
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.dll
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\bin\Debug\netcoreapp1.1\ASP_DU_2.pdb
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.csprojResolveAssemblyReference.cache
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.AssemblyInfo.cs
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.dll
+C:\Users\Martas\Desktop\ASP_DU_2\ASP_DU_2\obj\Debug\netcoreapp1.1\ASP_DU_2.pdb

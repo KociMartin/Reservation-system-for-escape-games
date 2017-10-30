@@ -1,0 +1,92 @@
+﻿@model ModelKeeper
+@{ViewData["Title"] = "Customer Detail";}
+
+@using (Html.BeginForm("ReservationCreate","Reservation"))
+{
+    <h3>Customer Detail</h3>
+    <div class="row">
+        <div class="col-xs-12">
+            Booking Room: @Html.DisplayFor(x => x.room.Name)
+            @{
+
+                int TimeTo = Model.reservation.ReservationHour + 1;
+            }
+            on @Html.DisplayFor(x => x.reservation.Date)
+            @Html.DisplayFor(x => x.reservation.ReservationHour):00 - @TimeTo:00
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                @Html.ValidationMessageFor(x => x.customer.Email)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                @Html.LabelFor(x => x.customer.Email)
+            </div>
+            <div class="col-xs-8">
+                @Html.EditorFor(x => x.customer.Email)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                @Html.ValidationMessageFor(x => x.customer.FirstName)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                @Html.LabelFor(x => x.customer.FirstName)
+            </div>
+            <div class="col-xs-8">
+                @Html.EditorFor(x => x.customer.FirstName)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                @Html.ValidationMessageFor(x => x.customer.LastName)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                @Html.LabelFor(x => x.customer.LastName)
+            </div>
+            <div class="col-xs-8">
+                @Html.EditorFor(x => x.customer.LastName)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                @Html.ValidationMessageFor(x => x.customer.Phone)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                @Html.LabelFor(x => x.customer.Phone)
+            </div>
+            <div class="col-xs-8">
+                @Html.EditorFor(x => x.customer.Phone)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                @Html.LabelFor(x => x.reservation.Description)
+            </div>
+            <div class="col-xs-8">
+                @Html.EditorFor(x => x.reservation.Description)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <input type="submit" value="Create booking" />
+            </div>
+        </div>
+
+        @Html.HiddenFor( x => x.room.Id)
+        @Html.HiddenFor(x => x.reservation.ReservationHour)
+        @Html.HiddenFor(x => x.reservation.Date)
+
+    </div>
+                }

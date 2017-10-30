@@ -1,0 +1,23 @@
+﻿@model List<Room>
+@{ViewData["Title"] = "Home";}
+
+<h1>Rooms</h1>
+<div class="row">
+    @foreach (Room room in Model)
+    {
+        <div class="col-xs-3 room-desc-border">
+            <h3>
+                @room.Name
+            </h3>
+            <div>
+                @{string Descr = @room.Description; }
+                @if (@room.Description.Length > 200)
+                {
+                    Descr = Descr.Substring(0, 197) + "...";
+                }
+                @Descr
+            </div>
+            @Html.ActionLink("Book Now!", "ReservationDetail", new { room.Id })
+        </div>
+                    }
+</div>

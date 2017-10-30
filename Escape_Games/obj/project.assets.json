@@ -10242,10 +10242,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Martas\\Desktop\\ASP_DU_2\\ASP_DU_2\\ASP_DU_2.csproj",
+      "projectUniqueName": "E:\\Dropbox\\Skola\\UNICORN\\L2016-2017\\ASP\\GIT Projects\\ASP_DU_2\\ASP_DU_2\\ASP_DU_2.csproj",
       "projectName": "ASP_DU_2",
-      "projectPath": "C:\\Users\\Martas\\Desktop\\ASP_DU_2\\ASP_DU_2\\ASP_DU_2.csproj",
-      "outputPath": "C:\\Users\\Martas\\Desktop\\ASP_DU_2\\ASP_DU_2\\obj\\",
+      "projectPath": "E:\\Dropbox\\Skola\\UNICORN\\L2016-2017\\ASP\\GIT Projects\\ASP_DU_2\\ASP_DU_2\\ASP_DU_2.csproj",
+      "outputPath": "E:\\Dropbox\\Skola\\UNICORN\\L2016-2017\\ASP\\GIT Projects\\ASP_DU_2\\ASP_DU_2\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
